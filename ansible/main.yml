@@ -1,0 +1,7 @@
+---
+#Main
+- hosts: VPS
+  remote_user: root
+  tasks:
+    - import_tasks: tasks/update.yml
+
