@@ -4,7 +4,7 @@
 ### System requirements
 - Ansible
 
-#### How to use
+### How to use
 First of all add your ssh key to autorized_key of your remote server:
 
 Step 1 (Generating a new SSH key):
@@ -23,7 +23,7 @@ $ scp ~/.ssh/id_rsa.pub user@example.com:~/.ssh/uploaded_key.pub
 ```
 Then (in the remote server):
 ```
-$ cat uploaded_key.pub >> authorized_keys
+$ cat uploaded_key.pub >> ~/.ssh/authorized_keys
 ```
 Also check the /etc/ssh/ssh_config file for the following lines:
 ```
