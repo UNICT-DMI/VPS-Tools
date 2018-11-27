@@ -49,7 +49,7 @@ $ ansible-playbook ansible/main.yml -f 10
 
 If you want execute Telegram-DMI-Bot at startup:
 ```
-$ cp /etc/systemd/system/
+$ cp dmibot.service /etc/systemd/system/
 $ systemctl enable dmibot.service
 ```
 
