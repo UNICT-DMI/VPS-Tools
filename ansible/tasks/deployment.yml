@@ -1,0 +1,20 @@
+---
+- name: Rsync dmibot from localhost
+  synchronize:
+    src: ~/Telegram-DMI-Bot
+    dest: /home/davide/
+    rsync_opts:
+      - "--exclude=.git/"
+      - "--exclude=config/token.conf"
+      - "--exclude=config/settings.yml"
+      - "--exclude=data/DMI_DB.db"
+      - "--exclude=logs/"
+      - "--exclude=README.md"
+      - "--exclude=LICENSE"
+      - "--exclude=requirements.txt"
+    
+
+- name: Execute dmibot service
+  service:
+    name: dmibot
+    state: restarted

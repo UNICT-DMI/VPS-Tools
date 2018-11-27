@@ -1,7 +1,15 @@
 ---
 #Main
+- hosts: localhost
+  remote_user: whoami
+  tasks:
+    - name: Git pull Telegram-DMI-Bot localhost
+      git:
+        repo: git@github.com:UNICT-DMI/Telegram-DMI-Bot.git
+        dest: ~/Telegram-DMI-Bot
+
 - hosts: VPS
   remote_user: root
   tasks:
     - import_tasks: tasks/update.yml
-
+    - import_tasks: tasks/deployment.yml

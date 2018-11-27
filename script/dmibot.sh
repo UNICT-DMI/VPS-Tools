@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/dmidev/dmibot
+cd /home/davide/binary-bot/
 python3 main.py
+

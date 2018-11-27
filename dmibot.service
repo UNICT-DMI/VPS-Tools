@@ -1,0 +1,7 @@
+[Unit]
+Description= Dmibot start service
+
+[Service]
+Type=simple
+User=dmidev
+ExecStart= /bin/bash /home/script/start.sh
