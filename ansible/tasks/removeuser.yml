@@ -1,0 +1,9 @@
+---
+- hosts: VPS
+  remote_user: root
+  tasks:
+    - name: Delete account
+      user:
+        name: "{{username}}"
+        state: absent
+        remove: yes

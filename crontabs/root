@@ -26,6 +26,3 @@
 
 #Backup dmidev folder
 00 04 * * 1,5 /bin/bash /home/script/backup.sh
-
-#Start Telegram-DMI-Bot at startup
-@reboot /bin/bash /home/script/start.sh
