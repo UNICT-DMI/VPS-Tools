@@ -54,12 +54,16 @@ housekeeping() {
 
 leave() {
 
-	echo
-	echo "--------------------"
-	echo "- Update Complete! -"
-	echo "--------------------"
-	echo
-	exit
+        echo
+        echo "--------------------"
+        echo "- Update Complete! -"
+        echo "--------------------"
+        echo 
+        echo "--------------------"
+        echo "- Reboot -"
+        echo "--------------------"
+        reboot
+
 }
 
 greeting
